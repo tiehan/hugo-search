@@ -11,7 +11,16 @@
     hugo-lunr-zh  -o public/data.json --matter-delims --- --matter-type yaml -d content/math/significance_test -c /math/significance_test/
     -o 未生成的json文件，-d为需要建立json文件的md文件，但这个参数没办法进行递归查找 -contextPath 生成的uri前缀
 
+https://github.com/stkevintan/hugo-lunr-zh
+
 因为hugo-lunr-zh不具有递归处理的能力，所以需要用python来处理，给每个文件夹生成一个json文件，然后再合并
 
 
+
 ## 2. 网页版的处理
+
+将search.html放到content下面，Rstudio会自动在Public下生成一个search/index.html文件；
+将data.json也放到public/search 这个文件夹下面
+
+json 文件太大，搜索有些慢额。。
+
